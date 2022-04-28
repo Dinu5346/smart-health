@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaterMinderActivity">
+
+    <Button
+        android:id="@+id/btnHomeWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_home"
+        android:textColor="?android:attr/textColorTertiary"
+        app:backgroundTint="?android:attr/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline12" />
+
+    <Button
+        android:id="@+id/btnExitWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_exit_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline12" />
+
+    <ImageView
+        android:id="@+id/logoWaterMinder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_content_description"
+        android:src="@mipmap/heart_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtLogoWaterMinder"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLogoWaterMinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="@font/armata"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoWaterMinder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoWaterMinder"
+        app:layout_constraintTop_toTopOf="@+id/logoWaterMinder" />
+
+    <TextView
+        android:id="@+id/txtTitleWaterMinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_title_water_minder"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoWaterMinder"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogoWaterMinder" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="38dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="38dp" />
+
+    <EditText
+        android:id="@+id/edttxtWaterCapacity"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="420dp"
+        android:autofillHints="@string/edttxt_water_capacity"
+        android:ems="10"
+        android:hint="@string/edttxt_water_capacity"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnHomeWater"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoWaterMinder" />
+
+    <TextView
+        android:id="@+id/txtWaterCapacity"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_water_capacity"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtWaterCapacity"
+        app:layout_constraintStart_toStartOf="@+id/edttxtWaterCapacity" />
+
+    <TextView
+        android:id="@+id/txtWaterNow"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_water_now"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtWaterNow"
+        app:layout_constraintStart_toStartOf="@+id/edttxtWaterNow" />
+
+    <ImageView
+        android:id="@+id/imgMeterWaterLevel"
+        android:layout_width="100dp"
+        android:layout_height="240dp"
+        android:contentDescription="@string/water_content_description"
+        app:layout_constraintBottom_toTopOf="@+id/btnHomeWater"
+        app:layout_constraintEnd_toStartOf="@+id/edttxtWaterCup"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtWaterNow"
+        app:srcCompat="@mipmap/water_bottle_0" />
+
+    <Button
+        android:id="@+id/btnSaveWater"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_save"
+        app:layout_constraintEnd_toEndOf="@+id/edttxtWaterCapacity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edttxtWaterCapacity"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtWaterCapacity" />
+
+    <Button
+        android:id="@+id/btnUpdateWater"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_update"
+        android:textColor="?android:attr/textColorTertiary"
+        app:backgroundTint="?android:attr/colorBackground"
+        app:layout_constraintEnd_toEndOf="@+id/edttxtWaterCapacity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edttxtWaterCapacity"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtWaterCapacity"
+        app:rippleColor="?attr/colorPrimary" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnWaterAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/btn_add_water_cup_content_description"
+        android:focusable="true"
+        app:backgroundTint="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/edttxtWaterCup"
+        app:layout_constraintStart_toStartOf="@+id/edttxtWaterCup"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtWaterCup"
+        app:srcCompat="@drawable/ic_add" />
+
+    <EditText
+        android:id="@+id/edttxtWaterCup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:autofillHints="@string/edttxt_water_cup"
+        android:ems="10"
+        android:hint="@string/edttxt_water_cup"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMeterWaterLevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgMeterWaterLevel"
+        app:layout_constraintTop_toTopOf="@+id/imgMeterWaterLevel" />
+
+    <TextView
+        android:id="@+id/txtWaterCup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_water_cup"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtWaterCup"
+        app:layout_constraintStart_toStartOf="@+id/edttxtWaterCup" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnWaterRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:clickable="true"
+        android:contentDescription="@string/btn_remove_water_cup_content_description"
+        android:focusable="true"
+        app:backgroundTint="?android:attr/colorBackground"
+        app:layout_constraintEnd_toEndOf="@+id/edttxtWaterCup"
+        app:layout_constraintStart_toStartOf="@+id/edttxtWaterCup"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtWaterCup"
+        app:rippleColor="?attr/colorPrimary"
+        app:srcCompat="@drawable/ic_remove"
+        app:tint="@color/grey" />
+
+    <EditText
+        android:id="@+id/edttxtWaterNow"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:autofillHints="@string/edttxt_water_now"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/edttxt_water_now"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtWaterCapacity" />
+
+    <TextView
+        android:id="@+id/txtWaterPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="@string/txt_bmi_status"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/edttxtWaterCup"
+        app:layout_constraintStart_toStartOf="@+id/edttxtWaterCup"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtWaterCup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/show_all_water_history"
+        android:title="Show all water minder history"
+        android:icon="@drawable/ic_history"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/show_how_to_use_water_minder"
+        android:title="How to use water minder"
+        android:icon="@drawable/ic_info"
+        app:showAsAction="ifRoom" />
+</menu>

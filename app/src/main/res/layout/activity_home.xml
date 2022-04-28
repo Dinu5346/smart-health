@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/logoHome"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_content_description"
+        android:src="@mipmap/heart_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtLogoHome"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLogoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="@font/armata"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoHome"
+        app:layout_constraintTop_toTopOf="@+id/logoHome" />
+
+    <TextView
+        android:id="@+id/txtTitleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_title_home"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoHome"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogoHome" />
+
+    <ImageButton
+        android:id="@+id/btnBmiHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/image_button"
+        android:contentDescription="@string/btn_bmi_home_content_description"
+        android:padding="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignOutHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoHome"
+        app:srcCompat="@mipmap/btn_bmi_icon" />
+
+    <ImageButton
+        android:id="@+id/btnWaterMinderHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/image_button"
+        android:contentDescription="@string/btn_placeholder_content_description"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBmiHome"
+        app:srcCompat="@mipmap/btn_water_minder_icon" />
+
+    <ImageButton
+        android:id="@+id/btnMedicalNotesHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/image_button"
+        android:contentDescription="@string/btn_medical_notes_home_content_description"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWaterMinderHome"
+        app:srcCompat="@mipmap/btn_medical_notes_icon" />
+
+    <ImageButton
+        android:id="@+id/btnSleepTrackerHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/image_button"
+        android:contentDescription="@string/btn_sleep_tracker_home_content_description"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMedicalNotesHome"
+        app:srcCompat="@mipmap/btn_sleep_tracker_icon" />
+
+    <Button
+        android:id="@+id/btnExitHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_exit_home"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSignOutHome"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnSignOutHome"
+        app:layout_constraintTop_toTopOf="@+id/btnSignOutHome" />
+
+    <Button
+        android:id="@+id/btnSignOutHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_sign_out_home"
+        android:textColor="?android:attr/textColorTertiary"
+        app:backgroundTint="?android:attr/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:rippleColor="?attr/colorPrimary" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="38dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="38dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

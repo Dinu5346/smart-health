@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentSignUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/logoSignUp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_content_description"
+        android:src="@mipmap/heart_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtLogoSignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLogoSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="@font/armata"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoSignUp"
+        app:layout_constraintTop_toTopOf="@+id/logoSignUp" />
+
+    <TextView
+        android:id="@+id/txtTitleSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_title_sign_up"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogoSignUp" />
+
+    <EditText
+        android:id="@+id/edttxtPasswordSignUp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints="@string/edttxt_password_hint"
+        android:ems="10"
+        android:hint="@string/edttxt_password_hint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtEmailSignUp" />
+
+    <TextView
+        android:id="@+id/txtPasswordRepeatSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_repeat_password"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtRepeatPassword"
+        app:layout_constraintStart_toStartOf="@+id/edttxtRepeatPassword" />
+
+    <TextView
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_last_name"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtLastName"
+        app:layout_constraintStart_toStartOf="@+id/edttxtLastName" />
+
+    <TextView
+        android:id="@+id/txtEmailSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_email"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtEmailSignUp"
+        app:layout_constraintStart_toStartOf="@+id/edttxtEmailSignUp" />
+
+    <TextView
+        android:id="@+id/txtPasswordSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_password"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtPasswordSignUp"
+        app:layout_constraintStart_toStartOf="@+id/edttxtPasswordSignUp" />
+
+    <EditText
+        android:id="@+id/edttxtFirstName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="338dp"
+        android:autofillHints="@string/edttxt_first_name_hint"
+        android:ems="10"
+        android:hint="@string/edttxt_first_name_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancelSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoSignUp" />
+
+    <EditText
+        android:id="@+id/edttxtLastName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints="@string/edttxt_last_name_hint"
+        android:ems="10"
+        android:hint="@string/edttxt_last_name_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtFirstName" />
+
+    <EditText
+        android:id="@+id/edttxtEmailSignUp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:autofillHints="@string/edttxt_email_hint"
+        android:ems="10"
+        android:hint="@string/edttxt_email_hint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtLastName" />
+
+    <TextView
+        android:id="@+id/txtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_first_name"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtFirstName"
+        app:layout_constraintStart_toStartOf="@+id/edttxtFirstName" />
+
+    <Button
+        android:id="@+id/btnSignUpSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sign_up"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelSignUp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelSignUp"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelSignUp" />
+
+    <Button
+        android:id="@+id/btnCancelSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_cancel"
+        android:textColor="?android:attr/textColorTertiary"
+        app:backgroundTint="?android:attr/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:rippleColor="?attr/colorPrimary" />
+
+    <EditText
+        android:id="@+id/edttxtRepeatPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints="@string/edttxt_password_hint"
+        android:ems="10"
+        android:hint="@string/edttxt_password_hint"
+        android:inputType="textPassword"
+        android:nextFocusDown="@id/btnSignUpSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtPasswordSignUp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="38dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="38dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

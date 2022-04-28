@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/txtDateBmiRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_date_bmi_row"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtWeightBmiRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_weight_bmi_row"
+                app:layout_constraintStart_toEndOf="@+id/txtDateBmiRow"
+                app:layout_constraintTop_toBottomOf="@+id/txtHeightBmiRow" />
+
+            <TextView
+                android:id="@+id/txtHeightBmiRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_height_bmi_row"
+                app:layout_constraintStart_toEndOf="@+id/txtDateBmiRow"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtHeightBmiRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="82dp"
+                android:layout_marginLeft="82dp"
+                android:text="@string/edttxt_height_hint"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/txtDateBmiRow"
+                app:layout_constraintTop_toTopOf="@+id/txtHeightBmiRow" />
+
+            <TextView
+                android:id="@+id/txtWeightBmiRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="82dp"
+                android:layout_marginLeft="82dp"
+                android:text="@string/edttxt_weight_hint"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/txtDateBmiRow"
+                app:layout_constraintTop_toTopOf="@+id/txtWeightBmiRow" />
+
+            <TextView
+                android:id="@+id/txtCm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="cm"
+                app:layout_constraintStart_toEndOf="@+id/txtHeightBmiRow1"
+                app:layout_constraintTop_toTopOf="@+id/txtHeightBmiRow1" />
+
+            <TextView
+                android:id="@+id/txtKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="kg"
+                app:layout_constraintStart_toEndOf="@+id/txtWeightBmiRow1"
+                app:layout_constraintTop_toTopOf="@+id/txtWeightBmiRow1" />
+
+            <TextView
+                android:id="@+id/txtBmiBmiRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/edttxt_bmi_hint"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtBmiLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_bmi_label_bmi_row"
+                app:layout_constraintEnd_toEndOf="@+id/txtBmiBmiRow"
+                app:layout_constraintStart_toStartOf="@+id/txtBmiBmiRow"
+                app:layout_constraintTop_toBottomOf="@+id/txtBmiBmiRow" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

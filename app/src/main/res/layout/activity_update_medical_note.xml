@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateMedicalNoteActivity">
+
+    <ImageView
+        android:id="@+id/logoMedicalNotes3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_content_description"
+        android:src="@mipmap/heart_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtLogoMedicalNotes3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLogoMedicalNotes3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="@font/armata"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoMedicalNotes3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoMedicalNotes3"
+        app:layout_constraintTop_toTopOf="@+id/logoMedicalNotes3" />
+
+    <TextView
+        android:id="@+id/txtTitleMedicalNotes3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_title_medical_notes"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoMedicalNotes3"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogoMedicalNotes3" />
+
+    <EditText
+        android:id="@+id/edttxtNoteTitle2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="340dp"
+        android:autofillHints="@string/edttxt_note_title_hint"
+        android:ems="10"
+        android:hint="@string/edttxt_note_title_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveNote2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoMedicalNotes3" />
+
+    <EditText
+        android:id="@+id/edttxtNoteCategory2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtNoteTitle2"
+        android:hint="@string/edttxt_note_category_hint"
+        android:autofillHints="@string/edttxt_note_category_hint"/>
+
+    <EditText
+        android:id="@+id/edttxtNote2"
+        android:layout_width="250dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttxtNoteCategory2"
+        android:hint="@string/edttxt_note_hint"
+        android:autofillHints="@string/edttxt_note_hint"/>
+
+    <Button
+        android:id="@+id/btnSaveNote2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_save"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancelNote2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelNote2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_cancel"
+        android:textColor="?android:attr/textColorTertiary"
+        app:backgroundTint="?android:attr/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNoteTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_note_title"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtNoteTitle2"
+        app:layout_constraintStart_toStartOf="@+id/edttxtNoteTitle2" />
+
+    <TextView
+        android:id="@+id/txtNoteCategory2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_note_category"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtNoteCategory2"
+        app:layout_constraintStart_toStartOf="@+id/edttxtNoteCategory2" />
+
+    <TextView
+        android:id="@+id/txtNote2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_note"
+        app:layout_constraintBottom_toTopOf="@+id/edttxtNote2"
+        app:layout_constraintStart_toStartOf="@+id/edttxtNote2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

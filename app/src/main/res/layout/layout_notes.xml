@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:id="@+id/noteLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/txtDateNote"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_date_bmi_row"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtTimeNote"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_time"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/txtDateNote"
+                app:layout_constraintStart_toStartOf="@+id/txtDateNote"
+                app:layout_constraintTop_toBottomOf="@+id/txtDateNote" />
+
+            <TextView
+                android:id="@+id/txtTitleNote"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:text="@string/txt_note_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtCategoryNote"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_note_category"
+                app:layout_constraintEnd_toEndOf="@+id/txtTitleNote"
+                app:layout_constraintStart_toStartOf="@+id/txtTitleNote"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleNote" />
+
+            <TextView
+                android:id="@+id/txtCategory2Note"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_note_category"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/txtTitle2Note"
+                app:layout_constraintStart_toStartOf="@+id/txtTitle2Note"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle2Note" />
+
+            <TextView
+                android:id="@+id/txtTitle2Note"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/txt_note_title"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/txtTitleNote"
+                app:layout_constraintStart_toEndOf="@+id/txtTitleNote"
+                app:layout_constraintTop_toTopOf="@+id/txtTitleNote" />
+
+            <TextView
+                android:id="@+id/txtNoteNote"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt_note_hint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory2Note" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
